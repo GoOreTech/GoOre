@@ -1,0 +1,39 @@
+# --- Go ---
+# Compiled binary (keep it out of git)
+/server
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Go workspace
+go.work
+go.work.sum
+
+# --- Dependencies ---
+node_modules/
+
+# --- Graphify ---
+graphify-out/
+
+# --- IDE / Editor ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+\#*\#
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+*.bak
+
+# --- Temp / Logs ---
+*.log
+tmp/
+
+prismarine-monotree
+test_world

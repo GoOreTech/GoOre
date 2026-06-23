@@ -1,0 +1,23 @@
+{
+    "image": "mcr.microsoft.com/devcontainers/go:1.26-trixie",
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {},
+        "ghcr.io/rafaph/devcontainer-features/goose-cli:1": {},
+    },
+    "mounts": [
+		"source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached"
+	],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "EditorConfig.EditorConfig",
+                "qwtel.sqlite-viewer"
+            ],
+            "settings": {
+                "workbench.colorTheme": "Default Dark Modern"
+            }
+        }
+    },
+	"postCreateCommand": "bash ./.devcontainer/postCreateCommand.sh",
+    "appPort": ["8000:8000"]
+}
