@@ -1,0 +1,6 @@
+services:
+  goore:
+    image: ghcr.io/GoOreTech/GoOre:latest # not recommending to use :latest tag
+    container_name: goore
+    ports:
+      - "25565:25565"

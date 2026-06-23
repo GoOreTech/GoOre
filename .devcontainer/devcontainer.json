@@ -3,6 +3,9 @@
     "features": {
         "ghcr.io/devcontainers/features/common-utils:2": {},
         "ghcr.io/rafaph/devcontainer-features/goose-cli:1": {},
+        "ghcr.io/devcontainers/features/docker-in-docker:3": {
+            "moby": false,
+        },
     },
     "mounts": [
 		"source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached"
